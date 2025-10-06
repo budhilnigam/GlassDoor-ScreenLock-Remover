@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Glassdoor ScreenBlock Remover",
+  "version": "1.0",
+  "description": "Removes the screen block for \" Add Review or Salary \" before viewing any page.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.glassdoor.co.in/*"], 
+      "js": ["content.js"]
+    }
+  ]
+}
